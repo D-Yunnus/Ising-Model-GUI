@@ -73,7 +73,7 @@ class root(ctk.CTk):
 
     def switch_models(self):
         if self.switch.get():
-            self.cmap = 'gist_rainbow'
+            self.cmap = 'hsv'
             self.lbl_Model.configure(text = 'XY Model')
         else:
             self.cmap = matplotlib.colors.LinearSegmentedColormap.from_list("", ['#390A6B', "#FAF743"])
